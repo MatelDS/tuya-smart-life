@@ -1096,6 +1096,35 @@ SENSORS: dict[str, tuple[SmartLifeSensorEntityDescription, ...]] = {
         ),
         *BATTERY_SENSORS,
     ),
+    # Two-way temperature and humidity switch
+    # "MOES Temperature and Humidity Smart Switch Module MS-103"
+    # Documentation not found
+    "sfkzq": (
+        SmartLifeSensorEntityDescription(
+            key="LeftMoisure",
+            name="LeftMoisure",
+            device_class=SensorDeviceClass.HUMIDITY,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        SmartLifeSensorEntityDescription(
+            key="LeftTemp",
+            name="LeftTemp",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        SmartLifeSensorEntityDescription(
+            key="RightMoisure",
+            name="RightMoisure",
+            device_class=SensorDeviceClass.HUMIDITY,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        SmartLifeSensorEntityDescription(
+            key="RightTemp",
+            name="RightTemp",
+            device_class=SensorDeviceClass.TEMPERATURE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+    ),
 }
 
 # Socket (duplicate of `kg`)
