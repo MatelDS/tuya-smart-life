@@ -1113,13 +1113,13 @@ SENSORS: dict[str, tuple[SmartLifeSensorEntityDescription, ...]] = {
             state_class=SensorStateClass.MEASUREMENT,
         ),
         SmartLifeSensorEntityDescription(
-            key=DPCode.VA_HUMIDITY,
+            key="RightMoisure",
             name="RightMoisure",
             device_class=SensorDeviceClass.HUMIDITY,
             state_class=SensorStateClass.MEASUREMENT,
         ),
         SmartLifeSensorEntityDescription(
-            key=DPCode.VA_TEMPERATURE,
+            key="RightTemp",
             name="RightTemp",
             device_class=SensorDeviceClass.TEMPERATURE,
             state_class=SensorStateClass.MEASUREMENT,
