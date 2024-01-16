@@ -327,7 +327,9 @@ class DPCode(StrEnum):
     TEMP_CONTROLLER = "temp_controller"
     TEMP_CURRENT = "temp_current"  # Current temperature in °C
     TEMP_CURRENT_F = "temp_current_f"  # Current temperature in °F
+    TEMP_LEFT = "LeftTemp" # left side temperature
     TEMP_INDOOR = "temp_indoor"  # Indoor temperature in °C
+    TEMP_RIGHT = "RightTemp" # Right side temperature
     TEMP_SET = "temp_set"  # Set the temperature in °C
     TEMP_SET_F = "temp_set_f"  # Set the temperature in °F
     TEMP_UNIT_CONVERT = "temp_unit_convert"  # Temperature unit switching
